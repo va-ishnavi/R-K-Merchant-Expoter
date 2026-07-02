@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>R K Merchant Exporter</title>
+    <link rel="icon" type="image/png" href="images/rk_logo_crop.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-bg {
+
+            background-image:
+                linear-gradient(rgba(4, 22, 61, .70), rgba(4, 22, 61, .70)),
+                url("images/rice-bg.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .wave {
+
+            background-image: url("images/pdf-bg.png");
+            background-size: cover;
+            background-position: right;
+
+        }
+
+        .glass {
+
+            background: rgba(255, 255, 255, .08);
+            backdrop-filter: blur(12px);
+
+        }
+
+        .nav-hover {
+
+            position: relative;
+
+        }
+
+        .nav-hover::after {
+
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 0%;
+            height: 3px;
+            background: #19A8F3;
+            transition: .4s;
+
+        }
+
+        .nav-hover:hover::after {
+
+            width: 100%;
+
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+
+    <header class="fixed top-0 left-0 w-full z-50">
+
+        <nav class="bg-white/95 backdrop-blur-md shadow-xl border-b border-blue-100">
+
+            <div class="max-w-7xl mx-auto">
+
+                <div class="flex items-center justify-between h-24 px-4 lg:px-8">
+
+                    <!-- LOGO -->
+
+                    <a href="index.html" class="flex items-center shrink-0 group">
+
+                        <img src="images/logo.png" alt="RK Merchant Exporter" class="w-[220px]
+sm:w-[250px]
+md:w-[280px]
+lg:w-[300px]
+xl:w-[330px]
+h-auto
+object-contain
+transition-all
+duration-500
+group-hover:scale-105">
+
+                    </a>
+
+                    <!-- Desktop Menu -->
+
+                    <ul class="hidden lg:flex items-center gap-9 font-medium">
+
+                        <li><a href="index.html" class="hover:text-sky-500 duration-300">Home</a></li>
+
+                        <li><a href="about.html" class="hover:text-sky-500 duration-300">About</a></li>
+
+                        <li><a href="products.html" class="hover:text-sky-500 duration-300">Products</a></li>
+
+                        <li><a href="whyus.html" class="hover:text-sky-500 duration-300">Why Us</a></li>
+
+                        <li><a href="contact.html" class="hover:text-sky-500 duration-300">Contact</a></li>
+
+                    </ul>
+
+                    <!-- Button -->
+
+                    <div class="hidden lg:flex">
+
+                        <a href="contact.html"
+                            class="px-7 py-3 rounded-full bg-gradient-to-r from-sky-500 to-blue-900 text-white font-semibold hover:scale-105 duration-500">
+
+                            Get Quote
+
+                        </a>
+
+                    </div>
+
+                    <!-- Mobile Button -->
+
+                    <button id="menu-btn" class="lg:hidden text-4xl text-blue-900">
+
+                        ☰
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Mobile Menu -->
+
+            <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-xl">
+
+                <ul class="flex flex-col">
+
+                    <li><a href="index.html" class="block px-6 py-4 hover:bg-sky-500 hover:text-white">Home</a></li>
+
+                    <li><a href="about.html" class="block px-6 py-4 hover:bg-sky-500 hover:text-white">About</a></li>
+
+                    <li><a href="products.html" class="block px-6 py-4 hover:bg-sky-500 hover:text-white">Products</a>
+                    </li>
+
+
+                    <li><a href="whyus.html" class="block px-6 py-4 hover:bg-sky-500 hover:text-white">Why Us</a></li>
+
+                    <li><a href="contact.html" class="block px-6 py-4 hover:bg-sky-500 hover:text-white">Contact</a>
+                    </li>
+
+                    <li class="p-5">
+
+                        <a href="contact.html" class="block text-center rounded-full bg-blue-900 text-white py-3">
+
+                            Get Quote
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero section -->
+
+    <section class="relative hero-bg wave min-h-screen flex items-center justify-center pt-24">
+
+        <!-- Background -->
+
+        <div class="absolute inset-0">
+
+            <img src="images/hero-bg.png" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-gradient-to-r from-[#041A3D]/90 via-[#041A3D]/70 to-[#041A3D]/60"></div>
+
+        </div>
+
+        <!-- Content -->
+
+        <div class="relative max-w-5xl mx-auto px-6 text-center">
+
+            <span
+                class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-sky-500/20 border border-sky-400 text-sky-300 font-semibold mt-5">
+
+                <i class="fa-solid fa-earth-asia"></i>
+                Trusted Global Exporter
+
+            </span>
+
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mt-8 text-white">
+
+                Connecting India
+
+                <span class="text-sky-400">
+
+                    To The World
+
+                </span>
+
+            </h1>
+
+            <p class="text-gray-200 mt-8 text-lg leading-9 max-w-3xl mx-auto">
+
+                R K Merchant Exporter is a trusted Indian exporter delivering premium quality
+                Rice, Fresh Fruits, Vegetables, Millets, Dehydrated Products,
+                Banana Products, Moringa Products, and Agricultural Commodities
+                to international markets.
+
+            </p>
+
+            <!-- Buttons -->
+
+            <div class="flex flex-wrap justify-center gap-5 mt-10">
+
+                <a href="products.html"
+                    class="px-9 py-4 rounded-full bg-sky-500 text-white font-semibold hover:bg-white hover:text-blue-900 hover:scale-110 transition duration-500">
+
+                    Explore Products
+
+                </a>
+
+                <a href="contact.html"
+                    class="px-9 py-4 rounded-full border-2 border-white text-white hover:bg-white hover:text-blue-900 hover:scale-110 transition duration-500">
+
+                    Contact Us
+
+                </a>
+
+            </div>
+
+            <!-- Features -->
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16 mb-10">
+
+                <div class="glass rounded-2xl p-6 text-center hover:bg-sky-500 transition duration-500 group">
+
+                    <i
+                        class="fa-solid fa-ship text-4xl text-white mb-4 group-hover:rotate-12 transition duration-500"></i>
+
+                    <h3 class="text-white font-bold">
+
+                        Worldwide Export
+
+                    </h3>
+
+                </div>
+
+                <div class="glass rounded-2xl p-6 text-center hover:bg-sky-500 transition duration-500 group">
+
+                    <i
+                        class="fa-solid fa-award text-4xl text-white mb-4 group-hover:scale-125 transition duration-500"></i>
+
+                    <h3 class="text-white font-bold">
+
+                        Premium Quality
+
+                    </h3>
+
+                </div>
+
+                <div class="glass rounded-2xl p-6 text-center hover:bg-sky-500 transition duration-500 group">
+
+                    <i
+                        class="fa-solid fa-box-open text-4xl text-white mb-4 group-hover:-rotate-12 transition duration-500"></i>
+
+                    <h3 class="text-white font-bold">
+
+                        Safe Packaging
+
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--About section -->
+
+    <section class="relative py-24 bg-white overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+
+            <img src="images/bg.png" alt="Hero Background" class="w-full h-full object-cover">
+
+            <!-- Dark Overlay -->
+            <div class="absolute inset-0 bg-blue-200/60"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <!-- Heading -->
+
+            <div class="max-w-4xl mx-auto text-center">
+
+                <span class="inline-block px-6 py-2 rounded-full bg-sky-100 text-sky-700 font-semibold">
+
+                    ABOUT OUR COMPANY
+
+                </span>
+
+                <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mt-6 leading-tight">
+
+                    Delivering Premium Agricultural Products Across The Globe
+
+                </h2>
+
+                <p class="mt-8 text-gray-700 leading-8">
+
+                    <strong>R K Merchant Exporter</strong> is a trusted Indian export company committed to supplying
+                    premium-quality agricultural and food products to customers worldwide. We source fresh produce
+                    directly from reliable farms and processing facilities while maintaining international quality
+                    standards.
+
+                </p>
+
+                <p class="mt-6 text-gray-700 leading-8">
+
+                    Our product range includes Rice, Fruits, Vegetables, Dehydrated Products, Banana Products, Millets,
+                    Moringa Products, Spices and many other agricultural commodities. Every shipment is carefully
+                    inspected, hygienically packed and delivered on time.
+
+                </p>
+
+            </div>
+
+            <!-- Image -->
+
+            <div class="relative mt-16 group">
+
+                <img src="images/abt-img.jpg"
+                    class="rounded-[35px] shadow-2xl w-full h-[700px] object-cover transition duration-700 group-hover:scale-[1.02]">
+
+                <!-- Experience Card -->
+
+                <div
+                    class="absolute bottom-8 left-8 bg-gradient-to-r from-sky-500 to-blue-900 text-white p-8 rounded-3xl shadow-2xl hover:-translate-y-2 duration-500">
+
+                    <h2 class="text-5xl font-bold">
+
+                        10+
+
+                    </h2>
+
+                    <p class="mt-2">
+
+                        Years of Export Excellence
+
+                    </p>
+
+                </div>
+
+                <!-- Floating Card -->
+
+                <div
+                    class="absolute top-8 right-8 bg-white p-6 rounded-3xl shadow-xl hover:bg-sky-500 hover:text-white duration-500">
+
+                    <i class="fa-solid fa-earth-asia text-4xl mb-3"></i>
+
+                    <h3 class="font-bold">
+
+                        Global Supply
+
+                    </h3>
+
+                    <p>
+
+                        Trusted International Partner
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Features -->
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
+
+                <!-- Card -->
+
+                <div
+                    class="group bg-white rounded-3xl p-8 shadow-xl border hover:bg-sky-500 hover:text-white hover:-translate-y-3 duration-500">
+
+                    <i class="fa-solid fa-award text-5xl text-sky-500 group-hover:text-white mb-5"></i>
+
+                    <h3 class="text-xl font-bold">
+
+                        Premium Quality
+
+                    </h3>
+
+                    <p class="mt-4">
+
+                        Strict quality inspections ensure export-grade products.
+
+                    </p>
+
+                </div>
+
+                <!-- Card -->
+
+                <div
+                    class="group bg-white rounded-3xl p-8 shadow-xl border hover:bg-blue-900 hover:text-white hover:-translate-y-3 duration-500">
+
+                    <i class="fa-solid fa-box-open text-5xl text-sky-500 group-hover:text-white mb-5"></i>
+
+                    <h3 class="text-xl font-bold">
+
+                        Safe Packaging
+
+                    </h3>
+
+                    <p class="mt-4">
+
+                        Hygienic export packaging with maximum product protection.
+
+                    </p>
+
+                </div>
+
+                <!-- Card -->
+
+                <div
+                    class="group bg-white rounded-3xl p-8 shadow-xl border hover:bg-sky-500 hover:text-white hover:-translate-y-3 duration-500">
+
+                    <i class="fa-solid fa-ship text-5xl text-sky-500 group-hover:text-white mb-5"></i>
+
+                    <h3 class="text-xl font-bold">
+
+                        Global Shipping
+
+                    </h3>
+
+                    <p class="mt-4">
+
+                        Reliable worldwide logistics with timely delivery.
+
+                    </p>
+
+                </div>
+
+                <!-- Card -->
+
+                <div
+                    class="group bg-white rounded-3xl p-8 shadow-xl border hover:bg-blue-900 hover:text-white hover:-translate-y-3 duration-500">
+
+                    <i class="fa-solid fa-handshake text-5xl text-sky-500 group-hover:text-white mb-5"></i>
+
+                    <h3 class="text-xl font-bold">
+
+                        Trusted Partnership
+
+                    </h3>
+
+                    <p class="mt-4">
+
+                        Long-term customer relationships through integrity.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Button -->
+
+            <div class="text-center mt-14">
+
+                <a href="about.html"
+                    class="inline-flex items-center gap-3 px-9 py-4 rounded-full bg-gradient-to-r from-sky-500 to-blue-900 text-white font-semibold hover:scale-105 hover:shadow-2xl hover:shadow-sky-500/40 transition duration-500">
+
+                    Read More
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--PRODUCT CATEGORIES-->
+
+    <section class="py-24 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#041A3D]/80 via-sky-600/70 to-[#041A3D]/60"></div>
+
+
+        <!-- Background Shape -->
+
+        <div class="absolute -top-40 -left-40 w-[500px] h-[500px] bg-sky-100 rounded-full blur-3xl opacity-40">
+        </div>
+
+        <div class="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-blue-100 rounded-full blur-3xl opacity-40">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative">
+
+            <!-- Heading -->
+
+            <div class="text-center mb-16">
+
+                <span class="inline-block px-5 py-2 rounded-full bg-sky-100 text-sky-700 font-semibold">
+
+                    OUR PRODUCTS
+
+                </span>
+
+                <h2 class="text-4xl lg:text-5xl font-bold mt-6 text-slate-900">
+
+                    Premium Agricultural Export Products
+
+                </h2>
+
+                <p class="max-w-3xl mx-auto mt-6 text-gray-200 leading-8">
+
+                    We export premium-quality rice, fresh fruits, vegetables, dehydrated products,
+                    banana products, millets, spices, moringa products and other agricultural
+                    commodities sourced from trusted farms across India.
+
+                </p>
+
+            </div>
+
+            <!-- Cards -->
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Card1 -->
+
+                <div
+                    class="group rounded-3xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-3">
+
+                    <div class="overflow-hidden">
+
+                        <img src="images/rices1.jpg"
+                            class="w-full h-60 object-cover group-hover:scale-110 duration-700">
+
+                    </div>
+
+                    <div class="p-7">
+
+                        <h3 class="text-2xl font-bold text-slate-900 group-hover:text-sky-600">
+
+                            Rice
+
+                        </h3>
+
+                        <p class="mt-4 text-gray-600">
+
+                            Traditional Rice, Basmati Rice & Non-Basmati Rice.
+
+                        </p>
+                        <a href="products.html#rice"
+                            class="inline-flex items-center justify-center mt-6 px-6 py-3 rounded-full bg-gradient-to-r from-sky-500 to-blue-900 text-white font-semibold hover:scale-105 hover:shadow-xl transition-all duration-500">
+
+                            View Products
+
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Card2 -->
+
+                <div
+                    class="group rounded-3xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-3">
+
+                    <div class="overflow-hidden">
+
+                        <img src="images/vegetables.jpg"
+                            class="w-full h-60 object-cover group-hover:scale-110 duration-700">
+
+                    </div>
+
+                    <div class="p-7">
+
+                        <h3 class="text-2xl font-bold group-hover:text-sky-600">
+
+                            Vegetables
+
+                        </h3>
+
+                        <p class="mt-4 text-gray-600">
+
+                            Fresh Onion, Ginger, Tomato and Potato.
+
+                        </p>
+                        <a href="products.html#vegetables"
+                            class="inline-flex items-center justify-center mt-6 px-6 py-3 rounded-full bg-gradient-to-r from-green-500 to-emerald-700 text-white font-semibold hover:scale-105 hover:shadow-2xl hover:from-emerald-700 hover:to-green-500 transition-all duration-500">
+
+                            View Vegetables
+
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Card3 -->
+
+                <div
+                    class="group rounded-3xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-3">
+
+                    <div class="overflow-hidden">
+
+                        <img src="images/banana.jpg"
+                            class="w-full h-60 object-cover group-hover:scale-110 duration-700">
+
+                    </div>
+
+                    <div class="p-7">
+
+                        <h3 class="text-2xl font-bold group-hover:text-sky-600">
+
+                            Banana Products
+
+                        </h3>
+
+                        <p class="mt-4 text-gray-600">
+
+                            G9 Banana, Banana Leaves, Powder & Dehydrated Banana.
+
+                        </p>
+                        <a href="products.html#banana"
+                            class="inline-flex items-center justify-center mt-6 px-6 py-3 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600 text-white font-semibold hover:scale-105 hover:shadow-2xl hover:from-yellow-600 hover:to-yellow-400 transition-all duration-500">
+
+                            View Banana
+
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Card4 -->
+
+                <div
+                    class="group rounded-3xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-3">
+
+                    <div class="overflow-hidden">
+
+                        <img src="images/dehydrated.jpg"
+                            class="w-full h-60 object-cover group-hover:scale-110 duration-700">
+
+                    </div>
+
+                    <div class="p-7">
+
+                        <h3 class="text-2xl font-bold group-hover:text-sky-600">
+
+                            Dehydrated Products
+
+                        </h3>
+
+                        <p class="mt-4 text-gray-600">
+
+                            Fruits, Vegetables & Premium Powders.
+
+                        </p>
+                        <a href="products.html#dehydrated"
+                            class="inline-flex items-center justify-center mt-6 px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-indigo-700 text-white font-semibold hover:scale-105 hover:shadow-2xl hover:from-indigo-700 hover:to-purple-500 transition-all duration-500">
+
+                            View Dehydrated
+
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Card5 -->
+
+                <div
+                    class="group rounded-3xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-3">
+
+                    <div class="overflow-hidden">
+
+                        <img src="images/millets.jpg"
+                            class="w-full h-60 object-cover group-hover:scale-110 duration-700">
+
+                    </div>
+
+                    <div class="p-7">
+
+                        <h3 class="text-2xl font-bold group-hover:text-sky-600">
+
+                            Millets
+
+                        </h3>
+
+                        <p class="mt-4 text-gray-600">
+
+                            Healthy Millets & Millet Food Products.
+
+                        </p>
+                        <a href="products.html#millets"
+                            class="inline-flex items-center justify-center mt-6 px-6 py-3 rounded-full bg-gradient-to-r from-amber-500 to-orange-600 text-white font-semibold hover:scale-105 hover:shadow-2xl hover:from-orange-600 hover:to-amber-500 transition-all duration-500">
+
+                            View Millets
+
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Card6 -->
+
+                <div
+                    class="group rounded-3xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-3">
+
+                    <div class="overflow-hidden">
+
+                        <img src="images/moringa-fresh-leaves.jpg"
+                            class="w-full h-60 object-cover group-hover:scale-110 duration-700">
+
+                    </div>
+
+                    <div class="p-7">
+
+                        <h3 class="text-2xl font-bold group-hover:text-sky-600">
+
+                            Moringa
+
+                        </h3>
+
+                        <p class="mt-4 text-gray-600">
+
+                            Premium Moringa Products for global markets.
+
+                        </p>
+
+                        <a href="products.html#moringa"
+                            class="inline-flex items-center justify-center mt-6 px-6 py-3 rounded-full bg-gradient-to-r from-lime-500 to-green-700 text-white font-semibold hover:scale-105 hover:shadow-2xl hover:from-green-700 hover:to-lime-500 transition-all duration-500">
+
+                            View Moringa
+
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Card7 -->
+
+                <div
+                    class="group rounded-3xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-3">
+
+                    <div class="overflow-hidden">
+
+                        <img src="images/ground-spices.jpg"
+                            class="w-full h-60 object-cover group-hover:scale-110 duration-700">
+
+                    </div>
+
+                    <div class="p-7">
+
+                        <h3 class="text-2xl font-bold group-hover:text-sky-600">
+
+                            Spices
+
+                        </h3>
+
+                        <p class="mt-4 text-gray-600">
+
+                            Garlic Powder, Ginger Powder & G4 Chilli Variety.
+
+                        </p>
+
+                        <a href="products.html#spices"
+                            class="inline-flex items-center justify-center mt-6 px-6 py-3 rounded-full bg-gradient-to-r from-red-500 to-rose-700 text-white font-semibold hover:scale-105 hover:shadow-2xl hover:from-rose-700 hover:to-red-500 transition-all duration-500">
+
+                            View Spice
+
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Card8 -->
+
+                <div
+                    class="group rounded-3xl overflow-hidden bg-gradient-to-br from-sky-600 to-blue-900 text-white shadow-2xl hover:scale-105 transition duration-500">
+
+                    <div class="p-10 text-center">
+
+                        <i class="fa-solid fa-earth-americas text-6xl mb-6"></i>
+
+                        <h3 class="text-3xl font-bold">
+
+                            25+ Export Products
+
+                        </h3>
+
+                        <p class="mt-5 leading-8">
+
+                            Delivering premium agricultural products with international quality standards.
+
+                        </p>
+
+                        <a href="products.html"
+                            class="inline-block mt-8 px-8 py-4 bg-white text-blue-900 rounded-full font-semibold hover:bg-sky-400 hover:text-white transition">
+
+                            View All Products
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WHY CHOOSE US -->
+
+    <section class="relative py-24 overflow-hidden ">
+
+        <!-- Background Image -->
+
+        <div class="absolute inset-0">
+
+            <img src="images/whyus-hero.jpg" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-gradient-to-r from-[#03153A]/75 via-[#05265A]/70 to-[#0A4B87]/60"></div>
+
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <!-- Heading -->
+
+            <div class="text-center mb-16">
+
+                <span
+                    class="inline-block px-6 py-2 rounded-full bg-sky-500/20 border border-sky-400 text-sky-300 font-semibold">
+
+                    WHY CHOOSE US
+
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-6">
+
+                    Why Choose R K Merchant Exporter
+
+                </h2>
+
+                <p class="text-gray-300 max-w-3xl mx-auto mt-5 leading-8">
+
+                    We are committed to supplying premium agricultural products with international quality standards,
+                    timely delivery, and customer-focused export solutions.
+
+                </p>
+
+            </div>
+
+            <!-- Cards -->
+
+            <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
+
+                <!-- Card -->
+
+                <div
+                    class="group relative rounded-3xl overflow-hidden h-[430px] shadow-2xl hover:-translate-y-4 duration-500">
+
+                    <img src="images/quality.jpg"
+                        class="absolute w-full h-full object-cover group-hover:scale-110 duration-700">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#03153A] via-[#03153A]/30 to-transparent">
+                    </div>
+
+                    <div class="absolute bottom-0 p-8">
+
+                        <div
+                            class="w-16 h-16 rounded-full bg-white text-sky-600 flex items-center justify-center text-2xl mb-5 group-hover:bg-sky-500 group-hover:text-white duration-500">
+
+                            <i class="fa-solid fa-award"></i>
+
+                        </div>
+
+                        <h3 class="text-3xl font-bold text-white">
+
+                            Premium Quality
+
+                        </h3>
+
+                        <p class="text-gray-300 mt-4">
+
+                            Export-grade agricultural products sourced from trusted farms.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Card -->
+
+                <div
+                    class="group relative rounded-3xl overflow-hidden h-[430px] shadow-2xl hover:-translate-y-4 duration-500">
+
+                    <img src="images/export.jpg"
+                        class="absolute w-full h-full object-cover group-hover:scale-110 duration-700">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#03153A] via-[#03153A]/30 to-transparent">
+                    </div>
+
+                    <div class="absolute bottom-0 p-8">
+
+                        <div
+                            class="w-16 h-16 rounded-full bg-white text-sky-600 flex items-center justify-center text-2xl mb-5 group-hover:bg-sky-500 group-hover:text-white duration-500">
+
+                            <i class="fa-solid fa-earth-asia"></i>
+
+                        </div>
+
+                        <h3 class="text-3xl font-bold text-white">
+
+                            Global Export
+
+                        </h3>
+
+                        <p class="text-gray-300 mt-4">
+
+                            Supplying premium food products to international markets.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Card -->
+
+                <div
+                    class="group relative rounded-3xl overflow-hidden h-[430px] shadow-2xl hover:-translate-y-4 duration-500">
+
+                    <img src="images/packing.jpg"
+                        class="absolute w-full h-full object-cover group-hover:scale-110 duration-700">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#03153A] via-[#03153A]/30 to-transparent">
+                    </div>
+
+                    <div class="absolute bottom-0 p-8">
+
+                        <div
+                            class="w-16 h-16 rounded-full bg-white text-sky-600 flex items-center justify-center text-2xl mb-5 group-hover:bg-sky-500 group-hover:text-white duration-500">
+
+                            <i class="fa-solid fa-box-open"></i>
+
+                        </div>
+
+                        <h3 class="text-3xl font-bold text-white">
+
+                            Safe Packaging
+
+                        </h3>
+
+                        <p class="text-gray-300 mt-4">
+
+                            Hygienic packing ensures freshness and product protection.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Card -->
+
+                <div
+                    class="group relative rounded-3xl overflow-hidden h-[430px] shadow-2xl hover:-translate-y-4 duration-500">
+
+                    <img src="images/trust.jpg"
+                        class="absolute w-full h-full object-cover group-hover:scale-110 duration-700">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#03153A] via-[#03153A]/30 to-transparent">
+                    </div>
+
+                    <div class="absolute bottom-0 p-8">
+
+                        <div
+                            class="w-16 h-16 rounded-full bg-white text-sky-600 flex items-center justify-center text-2xl mb-5 group-hover:bg-sky-500 group-hover:text-white duration-500">
+
+                            <i class="fa-solid fa-handshake"></i>
+
+                        </div>
+
+                        <h3 class="text-3xl font-bold text-white">
+
+                            Customer Trust
+
+                        </h3>
+
+                        <p class="text-gray-300 mt-4">
+
+                            Building long-term relationships through quality and reliability.
+
+                        </p>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!-- CTA Button -->
+
+            <div class="text-center mt-16">
+
+                <a href="whyus.html" class="inline-flex items-center gap-3 px-10 py-4 rounded-full
+        bg-gradient-to-r from-sky-500 via-blue-600 to-blue-900
+        text-white font-semibold text-lg
+        shadow-2xl
+        hover:shadow-sky-500/50
+        hover:scale-105
+        hover:-translate-y-1
+        transition-all duration-500">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    Learn More Why Choose Us
+
+                    <i class="fa-solid fa-arrow-right-long group-hover:translate-x-2 transition-all duration-500"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--GLOBAL EXPORT COUNTRIES -->
+
+    <section class="relative py-24 overflow-hidden">
+
+        <!-- Background Image -->
+
+        <div class="absolute inset-0">
+
+            <img src="images/global-bg.jpg" class="w-full h-full object-cover">
+
+
+        </div>
+
+        <!-- Decorative Blur -->
+
+        <div class="absolute top-0 left-0 w-96 h-96 bg-sky-400/20 blur-[120px] rounded-full"></div>
+
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/20 blur-[120px] rounded-full"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <!-- Heading -->
+
+            <div class="text-center">
+
+                <span
+                    class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-sky-500/20 border border-sky-400 text-sky-300 font-semibold">
+
+                    <i class="fa-solid fa-earth-americas"></i>
+
+                    GLOBAL EXPORT NETWORK
+
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-6">
+
+                    Delivering Excellence Across The Globe
+
+                </h2>
+
+                <p class="text-white mt-6 max-w-3xl mx-auto leading-8">
+
+                    R K Merchant Exporter proudly supplies premium agricultural products to international
+                    markets through a reliable export network, efficient logistics, and world-class packaging.
+
+                </p>
+
+            </div>
+
+            <!-- Statistics -->
+
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
+
+                <div
+                    class="group bg-white/10 backdrop-blur-lg rounded-3xl p-8 text-center border border-white/10 hover:bg-sky-500 duration-500">
+
+                    <i class="fa-solid fa-globe text-5xl text-white mb-5 group-hover:rotate-12 duration-500"></i>
+
+                    <h3 class="text-5xl font-bold text-white">20+</h3>
+
+                    <p class="text-gray-200 mt-3">
+
+                        Export Countries
+
+                    </p>
+
+                </div>
+
+                <div
+                    class="group bg-white/10 backdrop-blur-lg rounded-3xl p-8 text-center border border-white/10 hover:bg-sky-500 duration-500">
+
+                    <i
+                        class="fa-solid fa-boxes-stacked text-5xl text-white mb-5 group-hover:scale-110 duration-500"></i>
+
+                    <h3 class="text-5xl font-bold text-white">25+</h3>
+
+                    <p class="text-gray-200 mt-3">
+
+                        Product Categories
+
+                    </p>
+
+                </div>
+
+                <div
+                    class="group bg-white/10 backdrop-blur-lg rounded-3xl p-8 text-center border border-white/10 hover:bg-sky-500 duration-500">
+
+                    <i class="fa-solid fa-ship text-5xl text-white mb-5 group-hover:-rotate-12 duration-500"></i>
+
+                    <h3 class="text-5xl font-bold text-white">100%</h3>
+
+                    <p class="text-gray-200 mt-3">
+
+                        Safe Shipping
+
+                    </p>
+
+                </div>
+
+                <div
+                    class="group bg-white/10 backdrop-blur-lg rounded-3xl p-8 text-center border border-white/10 hover:bg-sky-500 duration-500">
+
+                    <i class="fa-solid fa-handshake text-5xl text-white mb-5 group-hover:scale-125 duration-500"></i>
+
+                    <h3 class="text-5xl font-bold text-white">24/7</h3>
+
+                    <p class="text-gray-200 mt-3">
+
+                        Customer Support
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Country Cards -->
+
+            <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-20">
+
+                <!-- UAE -->
+
+                <div
+                    class="group bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-3 hover:shadow-sky-500/40 hover:shadow-2xl duration-500">
+
+                    <img src="images/uae.jpg" class="h-48 w-full object-cover group-hover:scale-110 duration-700">
+
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-bold text-blue-900">
+
+                            UAE
+
+                        </h3>
+
+                        <p class="text-gray-600 mt-3">
+
+                            Exporting premium rice, spices, fresh vegetables, banana products and dehydrated foods.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Singapore -->
+
+                <div
+                    class="group bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-3 hover:shadow-sky-500/40 hover:shadow-2xl duration-500">
+
+                    <img src="images/singapore.jpg" class="h-48 w-full object-cover group-hover:scale-110 duration-700">
+
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-bold text-blue-900">
+
+                            Singapore
+
+                        </h3>
+
+                        <p class="text-gray-600 mt-3">
+
+                            Supplying export-quality agricultural products with reliable logistics.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Malaysia -->
+
+                <div
+                    class="group bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-3 hover:shadow-sky-500/40 hover:shadow-2xl duration-500">
+
+                    <img src="images/malaysia.jpg" class="h-48 w-full object-cover group-hover:scale-110 duration-700">
+
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-bold text-blue-900">
+
+                            Malaysia
+
+                        </h3>
+
+                        <p class="text-gray-600 mt-3">
+
+                            Trusted exporter of premium Indian food products and spices.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Europe -->
+
+                <div
+                    class="group bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-3 hover:shadow-sky-500/40 hover:shadow-2xl duration-500">
+
+                    <img src="images/europe.jpg" class="h-48 w-full object-cover group-hover:scale-110 duration-700">
+
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-bold text-blue-900">
+
+                            Europe
+
+                        </h3>
+
+                        <p class="text-gray-600 mt-3">
+
+                            Delivering fresh and dehydrated agricultural products with international standards.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+
+            <div class="text-center mt-20">
+
+                <a href="contact.html"
+                    class="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-gradient-to-r from-sky-500 to-blue-900 text-white font-semibold text-lg hover:scale-105 hover:shadow-2xl hover:shadow-sky-500/50 transition-all duration-500">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Start Export Inquiry
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--CONTACT CTA SECTION-->
+
+    <section class="relative py-28 overflow-hidden">
+
+        <!-- Background Image -->
+
+        <div class="absolute inset-0">
+
+            <img src="images/ont-bg.jpg" alt="" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-gradient-to-r from-[#03153A]/95 via-[#063E75]/90 to-[#0A73B7]/80"></div>
+
+        </div>
+
+        <!-- Floating Blur -->
+
+        <div class="absolute top-20 left-10 w-72 h-72 bg-sky-400/20 rounded-full blur-[120px] animate-pulse"></div>
+
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-blue-500/20 rounded-full blur-[140px] animate-pulse"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <div
+                class="grid lg:grid-cols-2 gap-12 items-center rounded-[40px] bg-white/10 backdrop-blur-xl border border-white/20 p-8 lg:p-14 shadow-2xl">
+
+                <!-- Left Side -->
+
+                <div>
+
+                    <span
+                        class="inline-flex items-center gap-2 bg-sky-500/20 text-sky-300 border border-sky-400 px-5 py-2 rounded-full font-semibold">
+
+                        <i class="fa-solid fa-headset"></i>
+
+                        CONTACT US
+
+                    </span>
+
+                    <h2 class="text-4xl lg:text-5xl font-bold text-white mt-6 leading-tight">
+
+                        Let's Build Global Business Together
+
+                    </h2>
+
+                    <p class="text-gray-200 mt-6 leading-8">
+
+                        Looking for a trusted exporter of premium agricultural products?
+                        Connect with <strong>R K Merchant Exporter</strong> for quality products,
+                        competitive prices, secure packaging and worldwide delivery.
+
+                    </p>
+
+                    <!-- Contact Cards -->
+
+                    <div class="space-y-5 mt-10">
+
+                        <div
+                            class="group flex items-center gap-5 bg-white/10 rounded-2xl p-5 hover:bg-sky-500 duration-500">
+
+                            <div
+                                class="w-16 h-16 rounded-full bg-white flex items-center justify-center text-sky-600 text-2xl group-hover:rotate-12 duration-500">
+
+                                <i class="fa-solid fa-phone-volume"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="text-white font-semibold">
+
+                                    Call Us
+
+                                </h4>
+
+                                <p class="text-gray-300">
+
+                                    <a href="tel:+91 8300399808">
+                                        +91 8300399808
+                                    </a>
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="group flex items-center gap-5 bg-white/10 rounded-2xl p-5 hover:bg-sky-500 duration-500">
+
+                            <div
+                                class="w-16 h-16 rounded-full bg-white flex items-center justify-center text-sky-600 text-2xl group-hover:rotate-12 duration-500">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="text-white font-semibold">
+
+                                    Email Address
+
+                                </h4>
+
+                                <p class="text-gray-300">
+
+                                    <a href="mailto:contact@rkmerchantexporter.com">
+                                        contact@rkmerchantexporter.com
+                                    </a>
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="group flex items-center gap-5 bg-white/10 rounded-2xl p-5 hover:bg-sky-500 duration-500">
+
+                            <div
+                                class="w-16 h-16 rounded-full bg-white flex items-center justify-center text-sky-600 text-2xl group-hover:rotate-12 duration-500">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="text-white font-semibold">
+
+                                    Office Address
+
+                                </h4>
+
+                                <p class="text-gray-300">
+
+                                    1292/15, Kamaraj Nagar,<br>
+                                    Kangayam, Tirupur,<br>
+                                    Tamil Nadu - 638701
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Side -->
+
+                <div class="bg-white rounded-[35px] p-8 shadow-2xl hover:-translate-y-3 duration-500">
+
+                    <h3 class="text-3xl font-bold text-blue-900 mb-6">
+
+                        Request A Quote
+
+                    </h3>
+
+                    <form class="space-y-5">
+
+                        <input type="text" placeholder="Your Name"
+                            class="w-full border rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                            required>
+
+                        <input type="email" placeholder="Email Address"
+                            class="w-full border rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                            required>
+
+                        <input type="tel" placeholder="Phone Number"
+                            class="w-full border rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                            required>
+
+                        <textarea rows="5" placeholder="Your Message"
+                            class="w-full border rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                            required></textarea>
+
+                        <button
+                            class="w-full bg-gradient-to-r from-sky-500 to-blue-900 text-white py-4 rounded-full font-semibold text-lg hover:scale-105 hover:shadow-2xl hover:shadow-sky-500/40 transition-all duration-500">
+
+                            Send Inquiry
+
+                            <i class="fa-solid fa-paper-plane ml-2"></i>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--FOOTER-->
+
+    <footer class="relative overflow-hidden bg-[#03153A] text-white">
+<div
+            class="absolute -top-24 -left-24 w-[350px] h-[450px] rounded-full bg-gradient-to-br from-sky-100 to-blue-200 blur-3xl opacity-60">
+        </div>
+
+        <div class="absolute inset-0">
+
+            <img src="images/bg-2.png" class="w-full h-full object-cover opacity-5">
+
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6 pt-32 pb-12">
+
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+
+                <!-- Company -->
+
+                <div>
+
+                    <img src="images/logo.png" class="w-66 mb-6 hover:scale-105 duration-500">
+
+                    <p class="text-gray-300 leading-8">
+
+                        R K Merchant Exporter is a trusted exporter of premium Indian agricultural products serving
+                        customers worldwide.
+
+                    </p>
+
+                    <!-- Social -->
+
+                    <div class="flex gap-4 mt-8">
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-sky-500 hover:-translate-y-2 duration-500">
+
+                            <i class="fab fa-facebook-f"></i>
+
+                        </a>
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-pink-500 hover:-translate-y-2 duration-500">
+
+                            <i class="fab fa-instagram"></i>
+
+                        </a>
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-sky-600 hover:-translate-y-2 duration-500">
+
+                            <i class="fab fa-linkedin-in"></i>
+
+                        </a>
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-red-600 hover:-translate-y-2 duration-500">
+
+                            <i class="fab fa-youtube"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+
+                <div>
+
+                    <h3 class="text-2xl font-bold mb-8">
+
+                        Quick Links
+
+                    </h3>
+
+                    <ul class="space-y-4">
+
+                        <li><a href="index.html"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Home</a></li>
+
+                        <li><a href="about.html" class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">About
+                                Us</a></li>
+
+                        <li><a href="products.html"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Products</a></li>
+
+                        <li><a href="whyus.html" class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Why
+                                Choose Us</a></li>
+
+                        <li><a href="contact.html"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Products -->
+
+                <div>
+
+                    <h3 class="text-2xl font-bold mb-8">
+
+                        Our Products
+
+                    </h3>
+
+                    <ul class="space-y-4">
+
+                        <li><a href="products.html#rice"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Rice</a></li>
+
+                        <li><a href="products.html#vegetables"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Vegetables</a></li>
+
+                        <li><a href="products.html#banana"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Banana Products</a></li>
+
+                        <li><a href="products.html#dehydrated"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Dehydrated Products</a>
+                        </li>
+
+                        <li><a href="products.html#millets"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Millets</a></li>
+
+                        <li><a href="products.html#moringa"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Moringa Products</a>
+                        </li>
+
+                        <li><a href="products.html#spices"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Spices</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div>
+
+                    <h3 class="text-2xl font-bold mb-8">
+
+                        Contact Info
+
+                    </h3>
+
+                    <div class="space-y-6">
+
+                        <div class="flex gap-4">
+
+                            <i class="fa-solid fa-location-dot text-sky-400 text-xl mt-1"></i>
+
+                            <p class="text-gray-300">
+
+                                1292/15, Kamaraj Nagar,<br>
+
+                                Paranjer Vali (PO),<br>
+
+                                Kangayam, Tirupur,<br>
+
+                                Tamil Nadu - 638701
+
+                            </p>
+
+                        </div>
+
+                        <div class="flex gap-4">
+
+                            <i class="fa-solid fa-phone text-sky-400"></i>
+
+                            <a href="tel:+918300399808" class="hover:text-sky-400 duration-300">
+
+                                +91 8300399808
+
+                            </a>
+
+                        </div>
+
+                        <div class="flex gap-4">
+
+                            <i class="fa-solid fa-envelope text-sky-400"></i>
+
+                            <a href="mailto:contact@rkmerchantexporter.com" class="hover:text-sky-400 duration-300">
+
+                                contact@rkmerchantexporter.com
+
+                            </a>
+
+                        </div>
+
+                        <div class="mt-8">
+
+                            <h4 class="font-semibold mb-4">
+
+                                Newsletter
+
+                            </h4>
+
+                            <form class="flex">
+
+                                <input type="email" placeholder="Your Email"
+                                    class="w-full px-4 py-3 rounded-l-full text-gray-800 focus:outline-none">
+
+                                <button class="bg-sky-500 px-6 rounded-r-full hover:bg-blue-700 duration-500">
+
+                                    <i class="fa-solid fa-paper-plane"></i>
+
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+
+            <div
+                class="border-t border-white/10 mt-14 pt-8 flex flex-col lg:flex-row justify-between items-center text-center gap-4">
+
+                <p class="text-gray-400">
+
+                    © 2026 R K Merchant Exporter. All Rights Reserved.
+
+                </p>
+
+                <div class="flex gap-6">
+
+                    <a href="#" class="hover:text-sky-400 duration-300">
+
+                        Privacy Policy
+
+                    </a>
+
+                    <a href="#" class="hover:text-sky-400 duration-300">
+
+                        Terms & Conditions
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+
+        const btn = document.getElementById("menu-btn");
+
+        const menu = document.getElementById("mobile-menu");
+
+        btn.addEventListener("click", () => {
+
+            menu.classList.toggle("hidden");
+
+        });
+
+    </script>
+
+</body>
+
+</html>
