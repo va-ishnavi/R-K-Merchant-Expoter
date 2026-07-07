@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>R K Merchant Exporter</title>
+    <link rel="icon" type="image/png" href="images/rk_logo_crop.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-bg {
+
+            background-image:
+                linear-gradient(rgba(4, 22, 61, .70), rgba(4, 22, 61, .70)),
+                url("images/rice-bg.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .wave {
+
+            background-image: url("images/pdf-bg.png");
+            background-size: cover;
+            background-position: right;
+
+        }
+
+        .glass {
+
+            background: rgba(255, 255, 255, .08);
+            backdrop-filter: blur(12px);
+
+        }
+
+        .nav-hover {
+
+            position: relative;
+
+        }
+
+        .nav-hover::after {
+
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 0%;
+            height: 3px;
+            background: #19A8F3;
+            transition: .4s;
+
+        }
+
+        .nav-hover:hover::after {
+
+            width: 100%;
+
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+
+    <header class="fixed top-0 left-0 w-full z-50">
+
+        <nav class="bg-white/95 backdrop-blur-md shadow-xl border-b border-blue-100">
+
+            <div class="max-w-7xl mx-auto">
+
+                <div class="flex items-center justify-between h-24 px-4 lg:px-8">
+
+                    <!-- LOGO -->
+
+                    <a href="index.html" class="flex items-center shrink-0 group">
+
+                        <img src="images/logo.png" alt="RK Merchant Exporter"
+                            class="w-[220px] sm:w-[250px]
+                         md:w-[280px] lg:w-[300px] xl:w-[330px] h-auto object-contain transition-all duration-500 group-hover:scale-105">
+
+                    </a>
+
+                    <!-- Desktop Menu -->
+
+                    <ul class="hidden lg:flex items-center gap-9 font-medium">
+
+                        <li><a href="index.html" class="hover:text-sky-500 duration-300">Home</a></li>
+
+                        <li><a href="about.html" class="hover:text-sky-500 duration-300">About</a></li>
+
+                        <li><a href="products.html" class="hover:text-sky-500 duration-300">Products</a></li>
+
+                        <li><a href="whyus.html" class="hover:text-sky-500 duration-300">Why Us</a></li>
+
+                        <li><a href="contact.html" class="hover:text-sky-500 duration-300">Contact</a></li>
+
+                    </ul>
+
+                    <!-- Button -->
+
+                    <div class="hidden lg:flex">
+
+                        <a href="contact.html"
+                            class="px-7 py-3 rounded-full bg-gradient-to-r from-sky-500 to-blue-900 text-white font-semibold hover:scale-105 duration-500">
+
+                            Get Quote
+
+                        </a>
+
+                    </div>
+
+                    <!-- Mobile Button -->
+
+                    <button id="menu-btn" class="lg:hidden text-4xl text-blue-900">
+
+                        ☰
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Mobile Menu -->
+
+            <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-xl">
+
+                <ul class="flex flex-col">
+
+                    <li><a href="index.html" class="block px-6 py-4 hover:bg-sky-500 hover:text-white">Home</a></li>
+
+                    <li><a href="about.html" class="block px-6 py-4 hover:bg-sky-500 hover:text-white">About</a></li>
+
+                    <li><a href="products.html" class="block px-6 py-4 hover:bg-sky-500 hover:text-white">Products</a>
+                    </li>
+
+
+                    <li><a href="whyus.html" class="block px-6 py-4 hover:bg-sky-500 hover:text-white">Why Us</a></li>
+
+                    <li><a href="contact.html" class="block px-6 py-4 hover:bg-sky-500 hover:text-white">Contact</a>
+                    </li>
+
+                    <li class="p-5">
+
+                        <a href="contact.html" class="block text-center rounded-full bg-blue-900 text-white py-3">
+
+                            Get Quote
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!--CONTACT HERO SECTION -->
+
+    <section class="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
+
+        <!-- Background Image -->
+
+        <div class="absolute inset-0">
+
+            <img src="images/ont-bg.jpg" alt="Contact Hero" class="w-full h-full object-cover">
+
+            <!-- Dark Overlay -->
+
+            <div class="absolute inset-0 bg-gradient-to-r from-[#02142F]/70 via-[#063E75]/80 to-[#19A8F3]/70"></div>
+
+        </div>
+
+        <!-- Blur Effects -->
+
+        <div class="absolute top-10 left-10 w-80 h-80 bg-sky-400/20 rounded-full blur-[150px] animate-pulse"></div>
+
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-500/20 rounded-full blur-[180px] animate-pulse"></div>
+
+        <!-- Content -->
+
+        <div class="relative max-w-5xl mx-auto px-6 text-center mt-10">
+
+            <!-- Small Badge -->
+
+            <span
+                class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 text-sky-300 font-semibold tracking-wide">
+
+                <i class="fa-solid fa-headset"></i>
+
+                CONTACT US
+
+            </span>
+
+            <!-- Heading -->
+
+            <h1 class="mt-8 text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight">
+
+                We Are Ready To Export
+
+                <br>
+
+                <span class="text-sky-400">
+
+                    Your Business Worldwide
+
+                </span>
+
+            </h1>
+
+            <!-- Description -->
+
+            <p class="mt-8 text-lg md:text-xl text-gray-200 leading-9 max-w-3xl mx-auto">
+
+                Connect with our export specialists for premium agricultural products,
+                customized packaging solutions, competitive pricing, and reliable
+                worldwide shipping.
+
+            </p>
+
+            <!-- Button -->
+
+            <div class="mt-12">
+
+                <a href="mail:contact@rkmerchantexporter.com"
+                    class="inline-flex items-center px-10 py-4 rounded-full bg-gradient-to-r from-sky-500 to-blue-900 text-white font-semibold text-lg shadow-xl hover:scale-110 hover:shadow-sky-500/40 transition-all duration-500">
+
+                    Get Quote
+
+                    <i class="fa-solid fa-arrow-right ml-3"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--CONTACT INFORMATION -->
+
+    <section class="relative py-24 overflow-hidden bg-gradient-to-br from-slate-50 via-sky-50 to-white">
+
+        <!-- Background Shapes -->
+
+        <div class="absolute -top-20 -left-20 w-72 h-72 bg-sky-200/40 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-200/40 rounded-full blur-[150px]"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <!-- Heading -->
+
+            <div class="text-center max-w-3xl mx-auto">
+
+                <span
+                    class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-sky-100 text-sky-700 font-semibold">
+
+                    <i class="fa-solid fa-address-book"></i>
+
+                    GET IN TOUCH
+
+                </span>
+
+                <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mt-6">
+
+                    We'd Love To Hear From You
+
+                </h2>
+
+                <p class="text-gray-600 mt-6 leading-8">
+
+                    Whether you are looking for premium agricultural products, customized export
+                    solutions, or long-term business partnerships, our team is always ready to
+                    assist you with quick and professional support.
+
+                </p>
+
+            </div>
+
+            <!-- Cards -->
+
+            <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-20">
+
+                <!-- Phone -->
+
+                <div
+                    class="group bg-white rounded-[30px] p-8 shadow-lg border border-sky-100 hover:-translate-y-3 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-900 hover:text-white transition duration-500">
+
+                    <div
+                        class="w-20 h-20 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 text-3xl mb-6 group-hover:bg-white group-hover:text-blue-900">
+
+                        <i class="fa-solid fa-phone-volume"></i>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold">
+
+                        Call Us
+
+                    </h3>
+
+                    <p class="mt-4 leading-7">
+
+                        +91 8300399808
+
+                    </p>
+
+                    <a href="tel:+918300399808"
+                        class="inline-block mt-6 text-sky-600 font-semibold group-hover:text-white">
+
+                        Call Now →
+
+                    </a>
+
+                </div>
+
+                <!-- Email -->
+
+                <div
+                    class="group bg-white rounded-[30px] p-8 shadow-lg border border-sky-100 hover:-translate-y-3 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-900 hover:text-white transition duration-500">
+
+                    <div
+                        class="w-20 h-20 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 text-3xl mb-6 group-hover:bg-white group-hover:text-blue-900">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold">
+
+                        Email Us
+
+                    </h3>
+
+                    <p class="mt-4 leading-7 break-all">
+
+                        contact@rkmerchantexporter.com
+
+                    </p>
+
+                    <a href="mailto: contact@rkmerchantexporter.com"
+                        class="inline-block mt-6 text-sky-600 font-semibold group-hover:text-white">
+
+                        Send Email →
+
+                    </a>
+
+                </div>
+
+                <!-- Address -->
+
+                <div
+                    class="group bg-white rounded-[30px] p-8 shadow-lg border border-sky-100 hover:-translate-y-3 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-900 hover:text-white transition duration-500">
+
+                    <div
+                        class="w-20 h-20 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 text-3xl mb-6 group-hover:bg-white group-hover:text-blue-900">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold">
+
+                        Office
+
+                    </h3>
+
+                    <p class="mt-4 leading-7">
+
+                        1292/15, Kamaraj Nagar, Paranjer Vali (PO), Kangayam (TK), Tirupur (DT), Tamil Nadu, PIN 638701
+
+                    </p>
+
+                </div>
+
+                <!-- Hours -->
+
+                <div
+                    class="group bg-white rounded-[30px] p-8 shadow-lg border border-sky-100 hover:-translate-y-3 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-900 hover:text-white transition duration-500">
+
+                    <div
+                        class="w-20 h-20 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 text-3xl mb-6 group-hover:bg-white group-hover:text-blue-900">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold">
+
+                        Working Hours
+
+                    </h3>
+
+                    <p class="mt-4 leading-7">
+
+                        Monday - Saturday<br>
+
+                        9:00 AM - 6:00 PM
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--EXPORT INQUIRY PROCESS-->
+
+    <section class="relative py-28 bg-gradient-to-br from-slate-50 via-sky-50 to-blue-50 overflow-hidden">
+
+        <!-- Background Shapes -->
+
+        <div class="absolute -top-24 left-0 w-96 h-96 rounded-full bg-sky-200/40 blur-[180px]"></div>
+
+        <div class="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-blue-200/40 blur-[180px]"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <!-- Heading -->
+
+            <div class="text-center max-w-3xl mx-auto">
+
+                <span
+                    class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-sky-100 text-sky-700 font-semibold">
+
+                    <i class="fa-solid fa-route"></i>
+
+                    EXPORT PROCESS
+
+                </span>
+
+                <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mt-6">
+
+                    Simple & Transparent Export Process
+
+                </h2>
+
+                <p class="mt-6 text-gray-600 leading-8">
+
+                    From your first inquiry to the final shipment, every step is handled with
+                    professionalism, transparency and complete customer satisfaction.
+
+                </p>
+
+            </div>
+
+            <!-- Timeline -->
+
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mt-20">
+
+                <!-- Step 1 -->
+
+                <div
+                    class="group bg-white rounded-[30px] shadow-xl p-8 text-center border hover:-translate-y-3 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-900 hover:text-white duration-500">
+
+                    <div
+                        class="w-20 h-20 mx-auto rounded-full bg-sky-100 flex items-center justify-center text-sky-600 text-3xl font-bold group-hover:bg-white">
+
+                        01
+
+                    </div>
+
+                    <i class="fa-solid fa-comments text-5xl mt-6 text-sky-500 group-hover:text-white"></i>
+
+                    <h3 class="text-2xl font-bold mt-6">
+
+                        Inquiry
+
+                    </h3>
+
+                    <p class="mt-4 leading-7">
+
+                        Share your product requirements, quantity, packaging preferences and destination country.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 2 -->
+
+                <div
+                    class="group bg-white rounded-[30px] shadow-xl p-8 text-center border hover:-translate-y-3 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-900 hover:text-white duration-500">
+
+                    <div
+                        class="w-20 h-20 mx-auto rounded-full bg-sky-100 flex items-center justify-center text-sky-600 text-3xl font-bold group-hover:bg-white">
+
+                        02
+
+                    </div>
+
+                    <i class="fa-solid fa-file-invoice text-5xl mt-6 text-sky-500 group-hover:text-white"></i>
+
+                    <h3 class="text-2xl font-bold mt-6">
+
+                        Quotation
+
+                    </h3>
+
+                    <p class="mt-4 leading-7">
+
+                        We provide competitive pricing, product specifications, payment terms and delivery schedule.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 3 -->
+
+                <div
+                    class="group bg-white rounded-[30px] shadow-xl p-8 text-center border hover:-translate-y-3 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-900 hover:text-white duration-500">
+
+                    <div
+                        class="w-20 h-20 mx-auto rounded-full bg-sky-100 flex items-center justify-center text-sky-600 text-3xl font-bold group-hover:bg-white">
+
+                        03
+
+                    </div>
+
+                    <i class="fa-solid fa-box-open text-5xl mt-6 text-sky-500 group-hover:text-white"></i>
+
+                    <h3 class="text-2xl font-bold mt-6">
+
+                        Packaging
+
+                    </h3>
+
+                    <p class="mt-4 leading-7">
+
+                        Products are quality checked, securely packed and prepared according to international export
+                        standards.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 4 -->
+
+                <div
+                    class="group bg-white rounded-[30px] shadow-xl p-8 text-center border hover:-translate-y-3 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-900 hover:text-white duration-500">
+
+                    <div
+                        class="w-20 h-20 mx-auto rounded-full bg-sky-100 flex items-center justify-center text-sky-600 text-3xl font-bold group-hover:bg-white">
+
+                        04
+
+                    </div>
+
+                    <i class="fa-solid fa-ship text-5xl mt-6 text-sky-500 group-hover:text-white"></i>
+
+                    <h3 class="text-2xl font-bold mt-6">
+
+                        Global Delivery
+
+                    </h3>
+
+                    <p class="mt-4 leading-7">
+
+                        Your shipment is dispatched safely with complete documentation and on-time worldwide delivery.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom CTA -->
+
+            <div class="text-center mt-20">
+
+                <a href="tel:+918300399808"
+                    class="inline-flex items-center px-10 py-4 rounded-full bg-gradient-to-r from-sky-500 to-blue-900 text-white font-semibold hover:scale-105 hover:shadow-2xl transition duration-500">
+
+                    Start Your Export Journey
+
+                    <i class="fa-solid fa-arrow-right ml-3"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--LOCATION & MAP -->
+
+    <section class="relative py-24 bg-gradient-to-br from-[#02142F]/70 via-[#063E75]/80 to-white overflow-hidden">
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <!-- Heading -->
+
+            <div class="text-center max-w-3xl mx-auto mb-16">
+
+                <span
+                    class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-sky-100 text-sky-700 font-semibold">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    FIND US
+
+                </span>
+
+                <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mt-6">
+
+                    Visit Our Office
+
+                </h2>
+
+                <p class="text-gray-200 mt-5 leading-8">
+
+                    We welcome importers, distributors, wholesalers and business partners
+                    from around the world. Visit our office or connect with us for export
+                    inquiries.
+
+                </p>
+
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-10 items-center">
+
+                <!-- Office Details -->
+
+                <div class="space-y-6">
+
+                    <!-- Address -->
+
+                    <div
+                        class="group bg-white rounded-3xl p-7 shadow-xl border hover:-translate-y-2 hover:bg-gradient-to-r hover:from-sky-500 hover:to-blue-900 hover:text-white transition duration-500">
+
+                        <div
+                            class="w-16 h-16 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 text-2xl mb-5 group-hover:bg-white">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                        </div>
+
+                        <h3 class="text-xl font-bold">
+
+                            Office Address
+
+                        </h3>
+
+                        <p class="mt-3 leading-7">
+
+                            1292/15, Kamaraj Nagar,<br>
+
+                            Kangayam,<br>
+
+                            Tirupur,<br>
+
+                            Tamil Nadu - 638701
+
+                        </p>
+
+                    </div>
+
+                    <!-- Contact -->
+
+                    <div
+                        class="group bg-white rounded-3xl p-7 shadow-xl border hover:-translate-y-2 hover:bg-gradient-to-r hover:from-sky-500 hover:to-blue-900 hover:text-white transition duration-500">
+
+                        <div
+                            class="w-16 h-16 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 text-2xl mb-5 group-hover:bg-white">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                        </div>
+
+                        <h3 class="text-xl font-bold">
+
+                            Contact
+
+                        </h3>
+
+                        <p class="mt-3">
+
+                            +91 8300399808
+
+                        </p>
+
+                        <p>
+
+                            contact@rkmerchantexporter.com
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Google Map -->
+
+                <div class="lg:col-span-2">
+
+                    <div
+                        class="rounded-[35px] overflow-hidden border-[10px] border-white shadow-2xl hover:scale-[1.02] transition duration-500">
+
+                        <iframe src="https://www.google.com/maps?q=Kangayam,Tamil+Nadu&output=embed" width="100%"
+                            height="550" style="border:0;" loading="lazy" allowfullscreen="">
+                        </iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--CONTACT CTA SECTION-->
+
+    <section class="relative py-28 overflow-hidden">
+
+        <!-- Background Image -->
+
+        <div class="absolute inset-0">
+
+            <img src="images/ont-bg.jpg" alt="" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-gradient-to-r from-[#03153A]/95 via-[#063E75]/90 to-[#0A73B7]/80"></div>
+
+        </div>
+
+        <!-- Floating Blur -->
+
+        <div class="absolute top-20 left-10 w-72 h-72 bg-sky-400/20 rounded-full blur-[120px] animate-pulse"></div>
+
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-blue-500/20 rounded-full blur-[140px] animate-pulse"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div
+                class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center rounded-3xl lg:rounded-[40px] bg-white/10 backdrop-blur-xl border border-white/20 p-6 sm:p-8 lg:p-14 shadow-2xl">
+                <!-- Left Side -->
+
+                <div>
+
+                    <span
+                        class="inline-flex items-center gap-2 bg-sky-500/20 text-sky-300 border border-sky-400 px-5 py-2 rounded-full font-semibold">
+
+                        <i class="fa-solid fa-headset"></i>
+
+                        CONTACT US
+
+                    </span>
+
+                    <h2 class="text-3xl text-white sm:text-4xl lg:text-5xl font-bold leading-tight mt-5">
+                        Let's Build Global Business Together
+
+                    </h2>
+
+                    <p class="text-gray-200 mt-6 leading-8">
+
+                        Looking for a trusted exporter of premium agricultural products?
+                        Connect with <strong>R K Merchant Exporter</strong> for quality products,
+                        competitive prices, secure packaging and worldwide delivery.
+
+                    </p>
+
+                    <!-- Contact Cards -->
+
+                    <div class="space-y-5 mt-10">
+
+                        <div
+                            class="group flex items-start sm:items-center gap-4 sm:gap-5 bg-white/10 rounded-2xl p-5 hover:bg-sky-500 duration-500">
+
+                            <div
+                                class="w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0 rounded-full bg-white flex items-center justify-center text-sky-600 text-2xl group-hover:rotate-12 duration-500">
+
+                                <i class="fa-solid fa-phone-volume"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="text-white font-semibold">
+
+                                    Call Us
+
+                                </h4>
+
+                                <p class="text-gray-300">
+
+                                    <a href="tel:+91 8300399808">
+                                        +91 8300399808
+                                    </a>
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="group flex items-center gap-5 bg-white/10 rounded-2xl p-5 hover:bg-sky-500 duration-500">
+
+                            <div
+                                class="w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0 rounded-full bg-white flex items-center justify-center text-sky-600 text-2xl group-hover:rotate-12 duration-500">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="text-white font-semibold">
+
+                                    Email Address
+
+                                </h4>
+
+                                <p class="text-gray-300 break-all">
+
+                                    <a href="mailto:contact@rkmerchantexporter.com">
+                                        contact@rkmerchantexporter.com
+                                    </a>
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="group flex items-center gap-5 bg-white/10 rounded-2xl p-5 hover:bg-sky-500 duration-500">
+
+                            <div
+                                class="w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0 rounded-full bg-white flex items-center justify-center text-sky-600 text-2xl group-hover:rotate-12 duration-500">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="text-white font-semibold">
+
+                                    Office Address
+
+                                </h4>
+
+                                <p class="text-gray-300">
+
+                                    1292/15, Kamaraj Nagar,<br>
+                                    Kangayam, Tirupur,<br>
+                                    Tamil Nadu - 638701
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Side -->
+
+                <div
+                    class="bg-white rounded-3xl lg:rounded-[35px] p-5 sm:p-8 shadow-2xl hover:-translate-y-2 lg:hover:-translate-y-3 duration-500">
+                    <h3 class="text-3xl font-bold text-blue-900 mb-6">
+
+                        Request A Quote
+
+                    </h3>
+
+                    <form class="space-y-5">
+
+                        <input type="text" placeholder="Your Name"
+                            class="w-full border rounded-xl  px-4 sm:px-5 py-3 sm:py-4 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-sky-500"
+                            required>
+
+                        <input type="email" placeholder="Email Address"
+                            class="w-full border rounded-xl  px-4 sm:px-5 py-3 sm:py-4 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-sky-500"
+                            required>
+
+                        <input type="tel" placeholder="Phone Number"
+                            class="w-full border rounded-xl  px-4 sm:px-5 py-3 sm:py-4 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-sky-500"
+                            required>
+
+                        <textarea rows="5" placeholder="Your Message"
+                            class="w-full border rounded-xl  px-4 sm:px-5 py-3 sm:py-4 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-sky-500"
+                            required></textarea>
+
+                        <button
+                            class="w-full bg-gradient-to-r from-sky-500 to-blue-900 text-white py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:scale-105 transition-all duration-500">
+
+                            Send Inquiry
+
+                            <i class="fa-solid fa-paper-plane ml-2"></i>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+
+    <footer class="relative overflow-hidden bg-[#03153A] text-white">
+        <div
+            class="absolute -top-24 -left-24 w-[350px] h-[450px] rounded-full bg-gradient-to-br from-sky-100 to-blue-200 blur-3xl opacity-60">
+        </div>
+
+        <div class="absolute inset-0">
+
+            <img src="images/bg-2.png" class="w-full h-full object-cover opacity-5">
+
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6 pt-32 pb-12">
+
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+
+                <!-- Company -->
+
+                <div>
+
+                    <img src="images/logo.png" class="w-66 mb-6 hover:scale-105 duration-500">
+
+                    <p class="text-gray-300 leading-8">
+
+                        R K Merchant Exporter is a trusted exporter of premium Indian agricultural products serving
+                        customers worldwide.
+
+                    </p>
+
+                    <!-- Social -->
+
+                    <div class="flex gap-4 mt-8">
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-sky-500 hover:-translate-y-2 duration-500">
+
+                            <i class="fab fa-facebook-f"></i>
+
+                        </a>
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-pink-500 hover:-translate-y-2 duration-500">
+
+                            <i class="fab fa-instagram"></i>
+
+                        </a>
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-sky-600 hover:-translate-y-2 duration-500">
+
+                            <i class="fab fa-linkedin-in"></i>
+
+                        </a>
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-red-600 hover:-translate-y-2 duration-500">
+
+                            <i class="fab fa-youtube"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+
+                <div>
+
+                    <h3 class="text-2xl font-bold mb-8">
+
+                        Quick Links
+
+                    </h3>
+
+                    <ul class="space-y-4">
+
+                        <li><a href="index.html"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Home</a></li>
+
+                        <li><a href="about.html" class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">About
+                                Us</a></li>
+
+                        <li><a href="products.html"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Products</a></li>
+
+                        <li><a href="whyus.html" class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Why
+                                Choose Us</a></li>
+
+                        <li><a href="contact.html"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Products -->
+
+                <div>
+
+                    <h3 class="text-2xl font-bold mb-8">
+
+                        Our Products
+
+                    </h3>
+
+                    <ul class="space-y-4">
+
+                        <li><a href="products.html#rice"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Rice</a></li>
+
+                        <li><a href="products.html#vegetables"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Vegetables</a></li>
+
+                        <li><a href="products.html#banana"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Banana Products</a></li>
+
+                        <li><a href="products.html#dehydrated"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Dehydrated Products</a>
+                        </li>
+
+                        <li><a href="products.html#millets"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Millets</a></li>
+
+                        <li><a href="products.html#moringa"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Moringa Products</a>
+                        </li>
+
+                        <li><a href="products.html#spices"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Spices</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div>
+
+                    <h3 class="text-2xl font-bold mb-8">
+
+                        Contact Info
+
+                    </h3>
+
+                    <div class="space-y-6">
+
+                        <div class="flex gap-4">
+
+                            <i class="fa-solid fa-location-dot text-sky-400 text-xl mt-1"></i>
+
+                            <p class="text-gray-300">
+
+                                1292/15, Kamaraj Nagar,<br>
+
+                                Paranjer Vali (PO),<br>
+
+                                Kangayam, Tirupur,<br>
+
+                                Tamil Nadu - 638701
+
+                            </p>
+
+                        </div>
+
+                        <div class="flex gap-4">
+
+                            <i class="fa-solid fa-phone text-sky-400"></i>
+
+                            <a href="tel:+918300399808" class="hover:text-sky-400 duration-300">
+
+                                +91 8300399808
+
+                            </a>
+
+                        </div>
+
+                        <div class="flex gap-4">
+
+                            <i class="fa-solid fa-envelope text-sky-400"></i>
+
+                            <a href="mailto:contact@rkmerchantexporter.com" class="hover:text-sky-400 duration-300">
+
+                                contact@rkmerchantexporter.com
+
+                            </a>
+
+                        </div>
+
+                        <div class="mt-8">
+
+                            <h4 class="font-semibold mb-4">
+
+                                Newsletter
+
+                            </h4>
+
+                            <form class="flex">
+
+                                <input type="email" placeholder="Your Email"
+                                    class="w-full px-4 py-3 rounded-l-full text-gray-800 focus:outline-none">
+
+                                <button class="bg-sky-500 px-6 rounded-r-full hover:bg-blue-700 duration-500">
+
+                                    <i class="fa-solid fa-paper-plane"></i>
+
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+
+            <div
+                class="border-t border-white/10 mt-14 pt-8 flex flex-col lg:flex-row justify-between items-center text-center gap-4">
+
+                <p class="text-gray-400">
+
+                    © 2026 R K Merchant Exporter. All Rights Reserved.
+
+                </p>
+
+                <div class="flex gap-6">
+
+                    <a href="#" class="hover:text-sky-400 duration-300">
+
+                        Privacy Policy
+
+                    </a>
+
+                    <a href="#" class="hover:text-sky-400 duration-300">
+
+                        Terms & Conditions
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+
+        const btn = document.getElementById("menu-btn");
+
+        const menu = document.getElementById("mobile-menu");
+
+        btn.addEventListener("click", () => {
+
+            menu.classList.toggle("hidden");
+
+        });
+
+    </script>
+
+</body>
+
+</html>

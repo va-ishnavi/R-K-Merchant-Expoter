@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>R K Merchant Exporter</title>
+    <link rel="icon" type="image/png" href="images/rk_logo_crop.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-bg {
+
+            background-image:
+                linear-gradient(rgba(4, 22, 61, .70), rgba(4, 22, 61, .70)),
+                url("images/rice-bg.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .wave {
+
+            background-image: url("images/pdf-bg.png");
+            background-size: cover;
+            background-position: right;
+
+        }
+
+        .glass {
+
+            background: rgba(255, 255, 255, .08);
+            backdrop-filter: blur(12px);
+
+        }
+
+        .nav-hover {
+
+            position: relative;
+
+        }
+
+        .nav-hover::after {
+
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 0%;
+            height: 3px;
+            background: #19A8F3;
+            transition: .4s;
+
+        }
+
+        .nav-hover:hover::after {
+
+            width: 100%;
+
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+
+    <header class="fixed top-0 left-0 w-full z-50">
+
+        <nav class="bg-white/95 backdrop-blur-md shadow-xl border-b border-blue-100">
+
+            <div class="max-w-7xl mx-auto">
+
+                <div class="flex items-center justify-between h-24 px-4 lg:px-8">
+
+                    <!-- LOGO -->
+
+                    <a href="index.html" class="flex items-center shrink-0 group">
+
+                        <img src="images/logo.png" alt="RK Merchant Exporter"
+                            class="w-[220px] sm:w-[250px]
+                         md:w-[280px] lg:w-[300px] xl:w-[330px] h-auto object-contain transition-all duration-500 group-hover:scale-105">
+
+                    </a>
+
+                    <!-- Desktop Menu -->
+
+                    <ul class="hidden lg:flex items-center gap-9 font-medium">
+
+                        <li><a href="index.html" class="hover:text-sky-500 duration-300">Home</a></li>
+
+                        <li><a href="about.html" class="hover:text-sky-500 duration-300">About</a></li>
+
+                        <li><a href="products.html" class="hover:text-sky-500 duration-300">Products</a></li>
+
+                        <li><a href="whyus.html" class="hover:text-sky-500 duration-300">Why Us</a></li>
+
+                        <li><a href="contact.html" class="hover:text-sky-500 duration-300">Contact</a></li>
+
+                    </ul>
+
+                    <!-- Button -->
+
+                    <div class="hidden lg:flex">
+
+                        <a href="contact.html"
+                            class="px-7 py-3 rounded-full bg-gradient-to-r from-sky-500 to-blue-900 text-white font-semibold hover:scale-105 duration-500">
+
+                            Get Quote
+
+                        </a>
+
+                    </div>
+
+                    <!-- Mobile Button -->
+
+                    <button id="menu-btn" class="lg:hidden text-4xl text-blue-900">
+
+                        ☰
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Mobile Menu -->
+
+            <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-xl">
+
+                <ul class="flex flex-col">
+
+                    <li><a href="index.html" class="block px-6 py-4 hover:bg-sky-500 hover:text-white">Home</a></li>
+
+                    <li><a href="about.html" class="block px-6 py-4 hover:bg-sky-500 hover:text-white">About</a></li>
+
+                    <li><a href="products.html" class="block px-6 py-4 hover:bg-sky-500 hover:text-white">Products</a>
+                    </li>
+
+
+                    <li><a href="whyus.html" class="block px-6 py-4 hover:bg-sky-500 hover:text-white">Why Us</a></li>
+
+                    <li><a href="contact.html" class="block px-6 py-4 hover:bg-sky-500 hover:text-white">Contact</a>
+                    </li>
+
+                    <li class="p-5">
+
+                        <a href="contact.html" class="block text-center rounded-full bg-blue-900 text-white py-3">
+
+                            Get Quote
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ABOUT HERO SECTION-->
+
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+
+        <!-- Background -->
+
+        <div class="absolute inset-0">
+
+            <img src="images/bg.png" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-gradient-to-r from-[#03153A]/95 via-[#063E75]/85 to-[#0A73B7]/75"></div>
+
+        </div>
+
+        <!-- Blur -->
+
+        <div
+            class="hidden lg:block absolute -top-32 -left-24 w-96 h-96 rounded-full bg-sky-500/20 blur-[150px] animate-pulse">
+        </div>
+
+        <div
+            class="hidden lg:block absolute bottom-0 right-0 w-[450px] h-[450px] rounded-full bg-blue-500/20 blur-[160px] animate-pulse">
+        </div>
+
+        <!-- Content -->
+
+        <div class="relative max-w-5xl mx-auto px-6 text-center">
+
+            <!-- Breadcrumb -->
+
+            <div
+                class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 text-white text-sm mt-10">
+
+                <a href="index.html" class="hover:text-sky-300 transition">
+
+                    Home
+
+                </a>
+
+                <i class="fa-solid fa-angle-right text-sky-400"></i>
+
+                <span class="text-sky-300">
+
+                    About Us
+
+                </span>
+
+            </div>
+
+            <!-- Heading -->
+
+            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white leading-tight mt-8">
+
+                About
+
+                <span class="text-sky-400">
+
+                    R K Merchant
+
+                </span>
+
+                Exporter
+
+            </h1>
+
+            <!-- Description -->
+
+            <p class="mt-8 text-lg text-gray-200 leading-9 max-w-3xl mx-auto">
+
+                We are a trusted Indian export company delivering premium agricultural products to customers worldwide.
+                Our commitment to quality, timely delivery, and customer satisfaction has made us a reliable export
+                partner for global buyers.
+
+            </p>
+
+            <!-- Buttons -->
+
+            <div class="flex flex-wrap justify-center gap-5 mt-10">
+
+                <a href="products.html"
+                    class="px-8 py-4 rounded-full bg-gradient-to-r from-sky-500 to-blue-900 text-white font-semibold hover:scale-105 hover:shadow-2xl hover:shadow-sky-500/40 transition duration-500">
+
+                    Explore Products
+
+                    <i class="fa-solid fa-arrow-right ml-2"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--COMPANY OVERVIEW  -->
+
+    <section class="relative py-24 overflow-hidden">
+
+        <!-- Background -->
+
+        <div class="absolute inset-0">
+
+            <img src="images/bg.png" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-white/90"></div>
+
+        </div>
+
+        <!-- Decorative Shapes -->
+
+        <div class="absolute top-20 left-10 w-64 h-64 bg-sky-100 rounded-full blur-3xl opacity-60"></div>
+
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-blue-100 rounded-full blur-3xl opacity-60"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                <!-- Image -->
+
+                <div class="relative group">
+
+                    <img src="images/logo.png"
+                        class="rounded-[35px] shadow-2xl w-full h-[600px] object-cover transition duration-700 group-hover:scale-105">
+
+                    <!-- Floating Card -->
+
+                    <div
+                        class="absolute bottom-8 left-8 bg-gradient-to-r from-sky-500 to-blue-900 text-white rounded-3xl p-7 shadow-2xl hover:-translate-y-2 duration-500">
+
+                        <h2 class="text-5xl font-bold">
+
+                            25+
+
+                        </h2>
+
+                        <p class="mt-2">
+
+                            Premium Export Products
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Content -->
+
+                <div>
+
+                    <span
+                        class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-sky-100 text-sky-700 font-semibold">
+
+                        <i class="fa-solid fa-building"></i>
+
+                        WHO WE ARE
+
+                    </span>
+
+                    <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mt-6 leading-tight">
+
+                        Your Reliable Partner For Agricultural Exports
+
+                    </h2>
+
+                    <p class="mt-8 text-gray-700 leading-8">
+
+                        <strong>R K Merchant Exporter</strong> is committed to supplying premium-quality agricultural
+                        products from India to customers across the globe. We work directly with trusted farmers,
+                        processors, and manufacturers to ensure exceptional quality, competitive pricing, and timely
+                        delivery.
+
+                    </p>
+
+                    <p class="mt-6 text-gray-700 leading-8">
+
+                        From traditional rice and fresh vegetables to dehydrated products, millets, banana products,
+                        moringa products, spices, and fox nuts, every shipment is carefully inspected and packed to
+                        meet international export standards.
+
+                    </p>
+
+                    <!-- Feature Cards -->
+
+                    <div class="grid sm:grid-cols-2 gap-5 mt-10">
+
+                        <div
+                            class="group bg-white rounded-3xl shadow-xl p-6 border hover:bg-sky-500 hover:text-white transition-all duration-500 hover:-translate-y-2">
+
+                            <i class="fa-solid fa-award text-4xl text-sky-500 group-hover:text-white mb-4"></i>
+
+                            <h3 class="font-bold text-xl">
+
+                                Premium Quality
+
+                            </h3>
+
+                            <p class="mt-3 text-sm">
+
+                                Carefully selected export-grade agricultural products.
+
+                            </p>
+
+                        </div>
+
+                        <div
+                            class="group bg-white rounded-3xl shadow-xl p-6 border hover:bg-blue-900 hover:text-white transition-all duration-500 hover:-translate-y-2">
+
+                            <i class="fa-solid fa-globe text-4xl text-sky-500 group-hover:text-white mb-4"></i>
+
+                            <h3 class="font-bold text-xl">
+
+                                Global Network
+
+                            </h3>
+
+                            <p class="mt-3 text-sm">
+
+                                Supplying products to international markets with reliability.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--MISSION • VISION • VALUES -->
+
+    <section class="relative py-24 overflow-hidden">
+
+        <!-- Background -->
+
+        <div class="absolute inset-0">
+
+            <img src="images/bg-2.png" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-gradient-to-r from-[#03153A]/55 via-[#063E75]/90 to-[#0A73B7]/85"></div>
+
+        </div>
+
+        <!-- Decorative Blur -->
+
+        <div class="absolute top-0 left-0 w-80 h-80 bg-sky-500/20 rounded-full blur-[140px]"></div>
+
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/20 rounded-full blur-[160px]"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <!-- Heading -->
+
+            <div class="text-center max-w-3xl mx-auto">
+
+                <span
+                    class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-sky-500/20 text-sky-300 border border-sky-400 font-semibold">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    Our Foundation
+
+                </span>
+
+                <h2 class="text-4xl lg:text-5xl font-bold text-white mt-6">
+
+                    Mission, Vision & Core Values
+
+                </h2>
+
+                <p class="text-gray-300 mt-6 leading-8">
+
+                    Our purpose is to deliver premium agricultural products from India
+                    to global markets while building long-lasting relationships through
+                    quality, integrity, innovation, and customer satisfaction.
+
+                </p>
+
+            </div>
+
+            <!-- Cards -->
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+
+                <!-- Mission -->
+
+                <div
+                    class="group rounded-[30px] bg-white/10 backdrop-blur-xl border border-white/20 p-8 text-center hover:-translate-y-4 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-900 duration-500">
+
+                    <div
+                        class="w-24 h-24 mx-auto rounded-full bg-white flex items-center justify-center text-sky-600 text-5xl group-hover:rotate-12 group-hover:scale-110 duration-500">
+
+                        <i class="fa-solid fa-bullseye"></i>
+
+                    </div>
+
+                    <h3 class="text-3xl font-bold text-white mt-8">
+
+                        Our Mission
+
+                    </h3>
+
+                    <p class="text-gray-300 mt-6 leading-8 group-hover:text-white">
+
+                        To deliver superior quality agricultural products sourced from
+                        trusted Indian farms while ensuring timely global delivery,
+                        competitive pricing, and complete customer satisfaction.
+
+                    </p>
+
+                </div>
+
+                <!-- Vision -->
+
+                <div
+                    class="group rounded-[30px] bg-white/10 backdrop-blur-xl border border-white/20 p-8 text-center hover:-translate-y-4 hover:bg-gradient-to-br hover:from-blue-900 hover:to-sky-500 duration-500">
+
+                    <div
+                        class="w-24 h-24 mx-auto rounded-full bg-white flex items-center justify-center text-sky-600 text-5xl group-hover:scale-110 duration-500">
+
+                        <i class="fa-solid fa-earth-asia"></i>
+
+                    </div>
+
+                    <h3 class="text-3xl font-bold text-white mt-8">
+
+                        Our Vision
+
+                    </h3>
+
+                    <p class="text-gray-300 mt-6 leading-8 group-hover:text-white">
+
+                        To become one of India's most trusted agricultural exporters by
+                        connecting local producers with international markets through
+                        innovation, sustainability, and excellence.
+
+                    </p>
+
+                </div>
+
+                <!-- Values -->
+
+                <div
+                    class="group rounded-[30px] bg-white/10 backdrop-blur-xl border border-white/20 p-8 text-center hover:-translate-y-4 hover:bg-gradient-to-br hover:from-sky-600 hover:to-indigo-900 duration-500">
+
+                    <div
+                        class="w-24 h-24 mx-auto rounded-full bg-white flex items-center justify-center text-sky-600 text-5xl group-hover:rotate-180 duration-700">
+
+                        <i class="fa-solid fa-handshake"></i>
+
+                    </div>
+
+                    <h3 class="text-3xl font-bold text-white mt-8">
+
+                        Core Values
+
+                    </h3>
+
+                    <p class="text-gray-300 mt-6 leading-8 group-hover:text-white">
+
+                        Integrity, quality, transparency, customer commitment,
+                        sustainable sourcing, ethical business practices, and reliable
+                        global partnerships are at the heart of everything we do.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom Highlights -->
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-20">
+
+                <div
+                    class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center hover:bg-sky-500 hover:-translate-y-2 duration-500">
+
+                    <i class="fa-solid fa-award text-4xl text-white mb-4"></i>
+
+                    <h4 class="text-white font-bold text-xl">
+
+                        Premium Quality
+
+                    </h4>
+
+                </div>
+
+                <div
+                    class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center hover:bg-sky-500 hover:-translate-y-2 duration-500">
+
+                    <i class="fa-solid fa-box-open text-4xl text-white mb-4"></i>
+
+                    <h4 class="text-white font-bold text-xl">
+
+                        Safe Packaging
+
+                    </h4>
+
+                </div>
+
+                <div
+                    class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center hover:bg-sky-500 hover:-translate-y-2 duration-500">
+
+                    <i class="fa-solid fa-ship text-4xl text-white mb-4"></i>
+
+                    <h4 class="text-white font-bold text-xl">
+
+                        Global Shipping
+
+                    </h4>
+
+                </div>
+
+                <div
+                    class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center hover:bg-sky-500 hover:-translate-y-2 duration-500">
+
+                    <i class="fa-solid fa-headset text-4xl text-white mb-4"></i>
+
+                    <h4 class="text-white font-bold text-xl">
+
+                        24×7 Support
+
+                    </h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--EXPORT PROCESS SECTION-->
+
+    <section class="relative py-24 overflow-hidden bg-gradient-to-br from-slate-50 via-sky-50 to-blue-100">
+
+        <!-- Background Pattern -->
+
+        <div class="absolute inset-0">
+
+            <img src="images/process-bg.jpg" class="w-full h-full object-cover opacity-10">
+
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <!-- Heading -->
+
+            <div class="text-center max-w-3xl mx-auto">
+
+                <span
+                    class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-sky-100 text-sky-700 font-semibold">
+
+                    <i class="fa-solid fa-gears"></i>
+
+                    OUR EXPORT PROCESS
+
+                </span>
+
+                <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mt-6">
+
+                    From Farm To Global Market
+
+                </h2>
+
+                <p class="mt-6 text-gray-600 leading-8">
+
+                    Every product follows a carefully monitored export process to ensure
+                    superior quality, hygienic packaging, timely shipment, and complete
+                    customer satisfaction.
+
+                </p>
+
+            </div>
+
+            <!-- Timeline -->
+
+            <div class="relative mt-20">
+
+                <!-- Line -->
+
+                <div
+                    class="hidden lg:block absolute top-14 left-0 right-0 h-1 bg-gradient-to-r from-sky-400 via-blue-700 to-sky-400">
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                    <!-- Step 1 -->
+
+                    <div
+                        class="group relative bg-white rounded-[30px] shadow-xl p-8 text-center hover:-translate-y-4 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-900 duration-500">
+
+                        <div
+                            class="w-24 h-24 mx-auto rounded-full bg-sky-500 text-white flex items-center justify-center text-5xl border-8 border-white shadow-xl group-hover:rotate-12 duration-500">
+
+                            <i class="fa-solid fa-seedling"></i>
+
+                        </div>
+
+                        <h3 class="text-2xl font-bold mt-8 group-hover:text-white">
+
+                            Farm Sourcing
+
+                        </h3>
+
+                        <p class="mt-4 text-gray-600 leading-7 group-hover:text-white">
+
+                            Fresh agricultural products sourced directly from trusted Indian farms.
+
+                        </p>
+
+                    </div>
+
+                    <!-- Step 2 -->
+
+                    <div
+                        class="group relative bg-white rounded-[30px] shadow-xl p-8 text-center hover:-translate-y-4 hover:bg-gradient-to-br hover:from-blue-900 hover:to-sky-500 duration-500">
+
+                        <div
+                            class="w-24 h-24 mx-auto rounded-full bg-sky-500 text-white flex items-center justify-center text-5xl border-8 border-white shadow-xl group-hover:scale-110 duration-500">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                        </div>
+
+                        <h3 class="text-2xl font-bold mt-8 group-hover:text-white">
+
+                            Quality Inspection
+
+                        </h3>
+
+                        <p class="mt-4 text-gray-600 leading-7 group-hover:text-white">
+
+                            Every batch undergoes strict quality checks before export.
+
+                        </p>
+
+                    </div>
+
+                    <!-- Step 3 -->
+
+                    <div
+                        class="group relative bg-white rounded-[30px] shadow-xl p-8 text-center hover:-translate-y-4 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-900 duration-500">
+
+                        <div
+                            class="w-24 h-24 mx-auto rounded-full bg-sky-500 text-white flex items-center justify-center text-5xl border-8 border-white shadow-xl group-hover:-rotate-12 duration-500">
+
+                            <i class="fa-solid fa-box-open"></i>
+
+                        </div>
+
+                        <h3 class="text-2xl font-bold mt-8 group-hover:text-white">
+
+                            Safe Packaging
+
+                        </h3>
+
+                        <p class="mt-4 text-gray-600 leading-7 group-hover:text-white">
+
+                            Hygienic packaging protects freshness during international transportation.
+
+                        </p>
+
+                    </div>
+
+                    <!-- Step 4 -->
+
+                    <div
+                        class="group relative bg-white rounded-[30px] shadow-xl p-8 text-center hover:-translate-y-4 hover:bg-gradient-to-br hover:from-blue-900 hover:to-sky-500 duration-500">
+
+                        <div
+                            class="w-24 h-24 mx-auto rounded-full bg-sky-500 text-white flex items-center justify-center text-5xl border-8 border-white shadow-xl group-hover:rotate-180 duration-700">
+
+                            <i class="fa-solid fa-ship"></i>
+
+                        </div>
+
+                        <h3 class="text-2xl font-bold mt-8 group-hover:text-white">
+
+                            Worldwide Delivery
+
+                        </h3>
+
+                        <p class="mt-4 text-gray-600 leading-7 group-hover:text-white">
+
+                            Fast and secure export logistics delivering products across global markets.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom Button -->
+
+            <div class="text-center mt-20">
+
+                <a href="contact.html"
+                    class="inline-flex items-center gap-3 px-9 py-4 rounded-full bg-gradient-to-r from-sky-500 to-blue-900 text-white font-semibold hover:scale-105 hover:shadow-2xl hover:shadow-sky-500/40 transition duration-500">
+
+                    Start Your Import Journey
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--GLOBAL EXPORT MARKETS -->
+
+    <section class="relative py-24 overflow-hidden">
+
+        <!-- Background -->
+
+        <div class="absolute inset-0">
+
+            <img src="images/whyus-hero.jpg" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-gradient-to-r from-[#03153A]/55 via-[#063E75]/90 to-[#0A73B7]/70"></div>
+
+        </div>
+
+        <!-- Floating Shapes -->
+
+        <div class="absolute top-10 left-10 w-72 h-72 rounded-full bg-sky-400/20 blur-[130px]"></div>
+
+        <div class="absolute bottom-10 right-10 w-80 h-80 rounded-full bg-blue-500/20 blur-[150px]"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <!-- Heading -->
+
+            <div class="text-center max-w-3xl mx-auto">
+
+                <span
+                    class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-sky-500/20 border border-sky-400 text-sky-300 font-semibold">
+
+                    <i class="fa-solid fa-earth-asia"></i>
+
+                    GLOBAL EXPORT MARKETS
+
+                </span>
+
+                <h2 class="text-4xl lg:text-5xl font-bold text-white mt-6">
+
+                    Delivering Indian Quality Worldwide
+
+                </h2>
+
+                <p class="text-gray-300 mt-6 leading-8">
+
+                    We proudly export premium agricultural products to customers across
+                    Asia, the Middle East, Europe, and other international markets with
+                    reliable logistics and timely delivery.
+
+                </p>
+
+            </div>
+
+            <!-- Countries -->
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+
+                <!-- UAE -->
+
+                <div
+                    class="group bg-white/10 backdrop-blur-xl border border-white/20 rounded-[30px] overflow-hidden hover:-translate-y-3 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-900 transition-all duration-500">
+
+                    <img src="images/uae.jpg" class="w-full h-56 object-cover group-hover:scale-110 duration-700">
+
+                    <div class="p-6 text-center">
+
+                        <i class="fa-solid fa-location-dot text-3xl text-sky-300 mb-4"></i>
+
+                        <h3 class="text-2xl font-bold text-white">
+
+                            UAE
+
+                        </h3>
+
+                        <p class="text-gray-300 mt-3 group-hover:text-white">
+
+                            Fresh Produce, Rice & Agricultural Products
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Singapore -->
+
+                <div
+                    class="group bg-white/10 backdrop-blur-xl border border-white/20 rounded-[30px] overflow-hidden hover:-translate-y-3 hover:bg-gradient-to-br hover:from-blue-900 hover:to-sky-500 transition-all duration-500">
+
+                    <img src="images/singapore.jpg" class="w-full h-56 object-cover group-hover:scale-110 duration-700">
+
+                    <div class="p-6 text-center">
+
+                        <i class="fa-solid fa-location-dot text-3xl text-sky-300 mb-4"></i>
+
+                        <h3 class="text-2xl font-bold text-white">
+
+                            Singapore
+
+                        </h3>
+
+                        <p class="text-gray-300 mt-3 group-hover:text-white">
+
+                            Premium Food & Agro Commodities
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Malaysia -->
+
+                <div
+                    class="group bg-white/10 backdrop-blur-xl border border-white/20 rounded-[30px] overflow-hidden hover:-translate-y-3 hover:bg-gradient-to-br hover:from-sky-500 hover:to-blue-900 transition-all duration-500">
+
+                    <img src="images/malaysia.jpg" class="w-full h-56 object-cover group-hover:scale-110 duration-700">
+
+                    <div class="p-6 text-center">
+
+                        <i class="fa-solid fa-location-dot text-3xl text-sky-300 mb-4"></i>
+
+                        <h3 class="text-2xl font-bold text-white">
+
+                            Malaysia
+
+                        </h3>
+
+                        <p class="text-gray-300 mt-3 group-hover:text-white">
+
+                            Exporting Quality Agricultural Products
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Europe -->
+
+                <div
+                    class="group bg-white/10 backdrop-blur-xl border border-white/20 rounded-[30px] overflow-hidden hover:-translate-y-3 hover:bg-gradient-to-br hover:from-blue-900 hover:to-sky-500 transition-all duration-500">
+
+                    <img src="images/europe.jpg" class="w-full h-56 object-cover group-hover:scale-110 duration-700">
+
+                    <div class="p-6 text-center">
+
+                        <i class="fa-solid fa-location-dot text-3xl text-sky-300 mb-4"></i>
+
+                        <h3 class="text-2xl font-bold text-white">
+
+                            Europe
+
+                        </h3>
+
+                        <p class="text-gray-300 mt-3 group-hover:text-white">
+
+                            Trusted Supply of Premium Indian Products
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Statistics -->
+
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
+
+                <div
+                    class="text-center bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 hover:bg-sky-500 duration-500">
+
+                    <h2 class="text-5xl font-bold text-white">
+
+                        25+
+
+                    </h2>
+
+                    <p class="text-gray-300 mt-3">
+
+                        Export Products
+
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="text-center bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 hover:bg-sky-500 duration-500">
+
+                    <h2 class="text-5xl font-bold text-white">
+
+                        100%
+
+                    </h2>
+
+                    <p class="text-gray-300 mt-3">
+
+                        Quality Assurance
+
+                    </p>
+
+                </div>
+
+                <div
+                    class="text-center bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 hover:bg-sky-500 duration-500">
+
+                    <h2 class="text-5xl font-bold text-white">
+
+                        24/7
+
+                    </h2>
+
+                    <p class="text-gray-300 mt-3">
+
+                        Customer Support
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+
+            <div class="text-center mt-20">
+
+                <a href="whyus.html"
+                    class="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-gradient-to-r from-sky-500 to-blue-900 text-white font-semibold hover:scale-105 hover:shadow-2xl hover:shadow-sky-500/40 transition-all duration-500">
+
+                    Why Choose us
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--FOOTER-->
+
+    <footer class="relative overflow-hidden bg-[#03153A] text-white">
+        <div
+            class="absolute -top-24 -left-24 w-[350px] h-[450px] rounded-full bg-gradient-to-br from-sky-100 to-blue-200 blur-3xl opacity-60">
+        </div>
+
+        <div class="absolute inset-0">
+
+            <img src="images/bg-2.png" class="w-full h-full object-cover opacity-5">
+
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6 pt-32 pb-12">
+
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+
+                <!-- Company -->
+
+                <div>
+
+                    <img src="images/logo.png" class="w-66 mb-6 hover:scale-105 duration-500">
+
+                    <p class="text-gray-300 leading-8">
+
+                        R K Merchant Exporter is a trusted exporter of premium Indian agricultural products serving
+                        customers worldwide.
+
+                    </p>
+
+                    <!-- Social -->
+
+                    <div class="flex gap-4 mt-8">
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-sky-500 hover:-translate-y-2 duration-500">
+
+                            <i class="fab fa-facebook-f"></i>
+
+                        </a>
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-pink-500 hover:-translate-y-2 duration-500">
+
+                            <i class="fab fa-instagram"></i>
+
+                        </a>
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-sky-600 hover:-translate-y-2 duration-500">
+
+                            <i class="fab fa-linkedin-in"></i>
+
+                        </a>
+
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-red-600 hover:-translate-y-2 duration-500">
+
+                            <i class="fab fa-youtube"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+
+                <div>
+
+                    <h3 class="text-2xl font-bold mb-8">
+
+                        Quick Links
+
+                    </h3>
+
+                    <ul class="space-y-4">
+
+                        <li><a href="index.html"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Home</a></li>
+
+                        <li><a href="about.html" class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">About
+                                Us</a></li>
+
+                        <li><a href="products.html"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Products</a></li>
+
+                        <li><a href="whyus.html" class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Why
+                                Choose Us</a></li>
+
+                        <li><a href="contact.html"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Products -->
+
+                <div>
+
+                    <h3 class="text-2xl font-bold mb-8">
+
+                        Our Products
+
+                    </h3>
+
+                    <ul class="space-y-4">
+
+                        <li><a href="products.html#rice"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Rice</a></li>
+
+                        <li><a href="products.html#vegetables"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Vegetables</a></li>
+
+                        <li><a href="products.html#banana"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Banana Products</a></li>
+
+                        <li><a href="products.html#dehydrated"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Dehydrated Products</a>
+                        </li>
+
+                        <li><a href="products.html#millets"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Millets</a></li>
+
+                        <li><a href="products.html#moringa"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Moringa Products</a>
+                        </li>
+
+                        <li><a href="products.html#spices"
+                                class="hover:text-sky-400 hover:pl-3 duration-300 inline-block">Spices</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div>
+
+                    <h3 class="text-2xl font-bold mb-8">
+
+                        Contact Info
+
+                    </h3>
+
+                    <div class="space-y-6">
+
+                        <div class="flex gap-4">
+
+                            <i class="fa-solid fa-location-dot text-sky-400 text-xl mt-1"></i>
+
+                            <p class="text-gray-300">
+
+                                1292/15, Kamaraj Nagar,<br>
+
+                                Paranjer Vali (PO),<br>
+
+                                Kangayam, Tirupur,<br>
+
+                                Tamil Nadu - 638701
+
+                            </p>
+
+                        </div>
+
+                        <div class="flex gap-4">
+
+                            <i class="fa-solid fa-phone text-sky-400"></i>
+
+                            <a href="tel:+918300399808" class="hover:text-sky-400 duration-300">
+
+                                +91 8300399808
+
+                            </a>
+
+                        </div>
+
+                        <div class="flex gap-4">
+
+                            <i class="fa-solid fa-envelope text-sky-400"></i>
+
+                            <a href="mailto:contact@rkmerchantexporter.com" class="hover:text-sky-400 duration-300">
+
+                                contact@rkmerchantexporter.com
+
+                            </a>
+
+                        </div>
+
+                        <div class="mt-8">
+
+                            <h4 class="font-semibold mb-4">
+
+                                Newsletter
+
+                            </h4>
+
+                            <form class="flex">
+
+                                <input type="email" placeholder="Your Email"
+                                    class="w-full px-4 py-3 rounded-l-full text-gray-800 focus:outline-none">
+
+                                <button class="bg-sky-500 px-6 rounded-r-full hover:bg-blue-700 duration-500">
+
+                                    <i class="fa-solid fa-paper-plane"></i>
+
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+
+            <div
+                class="border-t border-white/10 mt-14 pt-8 flex flex-col lg:flex-row justify-between items-center text-center gap-4">
+
+                <p class="text-gray-400">
+
+                    © 2026 R K Merchant Exporter. All Rights Reserved.
+
+                </p>
+
+                <div class="flex gap-6">
+
+                    <a href="#" class="hover:text-sky-400 duration-300">
+
+                        Privacy Policy
+
+                    </a>
+
+                    <a href="#" class="hover:text-sky-400 duration-300">
+
+                        Terms & Conditions
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+
+        const btn = document.getElementById("menu-btn");
+
+        const menu = document.getElementById("mobile-menu");
+
+        btn.addEventListener("click", () => {
+
+            menu.classList.toggle("hidden");
+
+        });
+
+    </script>
+
+</body>
+
+</html>
